@@ -1,0 +1,30 @@
+node_modules/
+dist/
+target/
+.tauri/
+.DS_Store
+~/.atri/
+.playwright-mcp/
+.vite/
+.claude/
+
+# User-uploaded Live2D model zips (runtime storage next to exe)
+models/
+
+# Build artifacts
+*.log
+*.exe
+*.png
+
+# Temp / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+Thumbs.db
+desktop.ini
+
+# Misc
+PROJECT_SUMMARY.md
+DESK_PET_GUIDE.md
+PROJECT_SUMMARY.md

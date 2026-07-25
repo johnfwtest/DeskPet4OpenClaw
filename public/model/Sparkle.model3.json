@@ -1,0 +1,89 @@
+{
+  "Version": 3,
+  "FileReferences": {
+    "Moc": "火花.moc3",
+    "Textures": [
+      "火花.4096/texture_00.png",
+      "火花.4096/texture_01.png"
+    ],
+    "Physics": "火花.physics3.json",
+    "DisplayInfo": "火花.cdi3.json",
+    "Motions": {
+      "Idle": [
+        {
+          "File": "Motions/循环动画.motion3.json"
+        }
+      ],
+      "Tap": [
+        {
+          "File": "Motions/循环动画.motion3.json"
+        }
+      ]
+    },
+    "Expressions": [
+      {
+        "Name": "01黑脸",
+        "File": "Expressions/01黑脸.exp3.json"
+      },
+      {
+        "Name": "02 脸红爱心",
+        "File": "Expressions/02 脸红爱心.exp3.json"
+      },
+      {
+        "Name": "03 生气",
+        "File": "Expressions/03 生气.exp3.json"
+      },
+      {
+        "Name": "04 晕",
+        "File": "Expressions/04 晕.exp3.json"
+      },
+      {
+        "Name": "05 ＞＜",
+        "File": "Expressions/05 ＞＜.exp3.json"
+      },
+      {
+        "Name": "06 0.0",
+        "File": "Expressions/06 0.0.exp3.json"
+      },
+      {
+        "Name": "07 星星眼",
+        "File": "Expressions/07 星星眼.exp3.json"
+      },
+      {
+        "Name": "08 流泪",
+        "File": "Expressions/08 流泪.exp3.json"
+      },
+      {
+        "Name": "10 捧心",
+        "File": "Expressions/10 捧心.exp3.json"
+      },
+      {
+        "Name": "11 要饭",
+        "File": "Expressions/11 要饭.exp3.json"
+      },
+      {
+        "Name": "月卡",
+        "File": "Expressions/月卡.exp3.json"
+      },
+      {
+        "Name": "水印",
+        "File": "Expressions/水印.exp3.json"
+      }
+    ]
+  },
+  "Groups": [
+    {
+      "Target": "Parameter",
+      "Name": "LipSync",
+      "Ids": []
+    },
+    {
+      "Target": "Parameter",
+      "Name": "EyeBlink",
+      "Ids": [
+        "ParamEyeLOpen",
+        "ParamEyeROpen"
+      ]
+    }
+  ]
+}

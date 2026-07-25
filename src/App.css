@@ -1,0 +1,66 @@
+/* ===== Desk Pet App Styles ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  background: transparent !important;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Speech bubble animations */
+@keyframes bubbleIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -100%) scale(0.9) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -100%) scale(1) translateY(0);
+  }
+}
+
+.typewriter-cursor {
+  animation: blink 0.8s infinite;
+  color: #888;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Chat panel scrollbar */
+.chat-panel::-webkit-scrollbar {
+  width: 4px;
+}
+
+.chat-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chat-panel::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.15);
+  border-radius: 2px;
+}
+
+/* Allow text selection inside chat messages */
+.chat-msg {
+  user-select: text;
+  -webkit-user-select: text;
+  cursor: auto;
+}
+
+/* Chat toggle button */
+.chat-toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+.chat-toggle-btn:active {
+  transform: scale(0.95);
+}

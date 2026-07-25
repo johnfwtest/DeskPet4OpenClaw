@@ -1,0 +1,29 @@
+[default]
+identifier = "default"
+description = "Allow Seren custom commands"
+permissions = [
+  "allow-list-models",
+  "allow-save-model-zip",
+  "allow-delete-model",
+  "allow-read-model-zip",
+]
+
+[[permission]]
+identifier = "allow-list-models"
+description = "Allow calling list_models from JS"
+commands.allow = ["list_models"]
+
+[[permission]]
+identifier = "allow-save-model-zip"
+description = "Allow calling save_model_zip from JS"
+commands.allow = ["save_model_zip"]
+
+[[permission]]
+identifier = "allow-delete-model"
+description = "Allow calling delete_model from JS"
+commands.allow = ["delete_model"]
+
+[[permission]]
+identifier = "allow-read-model-zip"
+description = "Allow calling read_model_zip from JS"
+commands.allow = ["read_model_zip"]

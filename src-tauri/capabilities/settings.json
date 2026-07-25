@@ -1,0 +1,23 @@
+{
+  "identifier": "settings",
+  "description": "Capability for Seren settings window",
+  "windows": ["settings"],
+  "remote": {
+    "urls": ["http://localhost:18900*"]
+  },
+  "permissions": [
+    "core:default",
+    "core:window:default",
+    "core:window:allow-close",
+    "core:window:allow-set-focus",
+    "core:window:allow-center",
+    "core:window:allow-set-size",
+    "core:event:default",
+    "core:event:allow-emit",
+    "core:event:allow-listen",
+    "shell:default",
+    "allow-save-model-zip",
+    "allow-delete-model",
+    "allow-list-models"
+  ]
+}
