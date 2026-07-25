@@ -16,7 +16,17 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+
+    - name: Show repo layout
+      run: |
+        pwd
+        ls -la
+        find . -maxdepth 4 -name Cargo.toml || true
+
     - name: Build
+      working-directory: src-tauri
       run: cargo build --verbose
+
     - name: Run tests
+      working-directory: src-tauri
       run: cargo test --verbose
